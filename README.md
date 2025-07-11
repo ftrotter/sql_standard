@@ -1,5 +1,7 @@
-NDH SQL Naming Convention Enforcement with SQLFluff
+TinMan SQL Naming Conventions
 =========
+
+Gievs structure to databases with heart. 
 
 This document outlines which naming conventions from the style guide can or cannot currently be enforced using SQLFluff, and provides configuration settings for enforceable rules. This ruleset is a extension and merger of three different rulesets for SQL tables: 
 
