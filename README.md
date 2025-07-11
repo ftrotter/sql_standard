@@ -11,7 +11,7 @@ We intend to write additional sqlfluff rules to support the rules that sqlfluff 
 
 ⸻
 
-❌ Rules Not Currently Enforceable by SQLFluff
+Rules Not Currently Enforceable by SQLFluff
 ------
 
 These require either a custom rule, external linter, or manual review:
@@ -33,7 +33,7 @@ These require either a custom rule, external linter, or manual review:
 
 ⸻
 
-✅ Rules Enforceable by SQLFluff
+Rules Enforceable by SQLFluff
 ------
 
 These can be configured using standard SQLFluff rules:
@@ -48,7 +48,7 @@ These can be configured using standard SQLFluff rules:
 
 ⸻
 
-✅ .sqlfluff Configuration
+.sqlfluff Configuration
 ----
 
 ```conf
