@@ -15,8 +15,15 @@ These require either a custom rule, external linter, or manual review:
 * Use singular nouns for table names
 * Primary key should be named id
 * Foreign keys should follow the pattern <table>_id
+  * Two foreign keys in the table requires a prefix on the foreign key column, to differentiate the two links. Like <helpfulname>_<table>_id etc.
+  * Foreign keys can and will be created dynamically based on this naming convention. 
 * Name indexes explicitly with table and column
 * Name constraints clearly
+* The varchar or text field in the table is assumed to be the "auto-suggest search" field for the table. If this is not true, then the table needs an explicit select_name field or postfixed field. 
+* DURC Reserved names:
+  * a column named select_name or that ends in _select_name is reserved for the field that will power an auto-suggest lookup on the table.
+  * column names with a postfix of _markdown are used to invoke a front-end markdown editor
+  * column names with a postfix of _code will invoke a code-editor on the front end. 
 
 ⸻
 
