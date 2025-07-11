@@ -1,7 +1,13 @@
 NDH SQL Naming Convention Enforcement with SQLFluff
 =========
 
-This document outlines which naming conventions from the style guide can or cannot currently be enforced using SQLFluff, and provides configuration settings for enforceable rules.
+This document outlines which naming conventions from the style guide can or cannot currently be enforced using SQLFluff, and provides configuration settings for enforceable rules. This ruleset is a extension and merger of three different rulesets for SQL tables: 
+
+* [https://x.com/sehrope](https://x.com/sehrope) wrote [How I Write SQL, Part 1: Naming Conventions](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/)
+* [DURC](https://github.com/ftrotter/durc_is_crud) naming conventions
+* [SQLFluff default rules](https://docs.sqlfluff.com/en/stable/configuration/default_configuration.html)
+
+We intend to write additional sqlfluff rules to support the rules that sqlfluff does not already support when possible. eventually. given infinite time and resources.
 
 ⸻
 
