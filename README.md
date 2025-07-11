@@ -1,10 +1,12 @@
-SQL Naming Convention Enforcement with SQLFluff
+NDH SQL Naming Convention Enforcement with SQLFluff
+=========
 
 This document outlines which naming conventions from the style guide can or cannot currently be enforced using SQLFluff, and provides configuration settings for enforceable rules.
 
 ⸻
 
 ❌ Rules Not Currently Enforceable by SQLFluff
+------
 
 These require either a custom rule, external linter, or manual review:
 	•	Use full English words, not abbreviations
@@ -18,6 +20,7 @@ These require either a custom rule, external linter, or manual review:
 ⸻
 
 ✅ Rules Enforceable by SQLFluff
+------
 
 These can be configured using standard SQLFluff rules:
 	•	Avoid quoted identifiers
@@ -32,7 +35,9 @@ These can be configured using standard SQLFluff rules:
 ⸻
 
 ✅ .sqlfluff Configuration
+----
 
+```conf
 [sqlfluff]
 dialect = postgres
 
@@ -52,8 +57,5 @@ ignore_words = ''  # Do not allow any exceptions
 [sqlfluff:rules:L040]
 capitalisation_policy = lower
 naming_convention = snake_case
+```
 
-
-⸻
-
-Let me know if you’d like help creating custom SQLFluff rules for additional naming policies.
